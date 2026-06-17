@@ -27,5 +27,11 @@ The goal is to evaluate which brawlers may be overpowered, balanced, or underpow
 - Predictive model for new brawler balance
 
 ## Current Status
-Day 1: Project setup and GitHub repository created.# brawl-stars-balance-analyzer
+Day 1: 
+- Project setup and GitHub repository created.# brawl-stars-balance-analyzer
 Analyzing Brawl Stars character balance using Python, SQL, and Tableau.
+
+Day 2:
+- Created initial brawler performance dataset with 104 brawlers
+- Extracted rank, win rate, use rate, and meta score from raw website data (https://brawlytix.com/meta-tracker)
+- Built a Python script to convert raw copied data into a clean CSV
