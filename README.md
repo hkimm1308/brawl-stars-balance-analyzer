@@ -1,37 +1,68 @@
 # Brawl Stars Balance Analyzer
 
-## Project Goal
-This project analyzes Brawl Stars character balance using Python, SQL, and Tableau.
+A Python data science project exploring Brawl Stars balance, meta rankings, and gameplay characteristics.
 
-The goal is to evaluate which brawlers may be overpowered, balanced, or underpowered based on character stats and performance data such as win rate, pick rate, and ban rate.
+## Project Overview
 
-## Tools I Plan to Use
+This project analyzes Brawl Stars performance data to identify:
+
+- Underused brawlers
+- Overused brawlers
+- Relationships between win rate and meta rankings
+- Factors that contribute to brawler strength
+
+## Current Datasets
+
+### Performance Dataset
+
+Contains:
+
+- Rank
+- Name
+- WinRate
+- UseRate
+- MetaScore
+
+### Attributes Dataset
+
+Contains:
+
+- Name
+- Class
+- Health
+- RangeCategory
+
+## Key Findings
+
+### 1. MetaScore and WinRate Are Weakly Related
+
+Correlation:
+
+```text
+0.184
+```
+
+This suggests MetaScore captures factors beyond raw win rate.
+
+### 2. Tanks Have High Win Rates
+
+Tanks have the highest average win rate among analyzed classes.
+
+### 3. Range Influences MetaScore
+
+Very-long-range brawlers have higher average MetaScores despite lower win rates.
+
+## Technologies
+
 - Python
 - Pandas
-- SQL
-- Tableau
-- Git/GitHub
+- Matplotlib
+- Git
+- GitHub
 
-## Project Questions
-- Which brawlers have the highest and lowest win rates?
-- Which roles perform best across different game modes?
-- Are some brawlers overpicked or underpicked compared to their performance?
-- Can character stats help predict whether a new brawler would be balanced?
+## Future Work
 
-## Planned Features
-- Clean dataset of brawler stats and performance metrics
-- Python analysis using Pandas
-- SQL database and queries
-- Tableau dashboard
-- Custom balance score
-- Predictive model for new brawler balance
-
-## Current Status
-Day 1: 
-- Project setup and GitHub repository created.# brawl-stars-balance-analyzer
-Analyzing Brawl Stars character balance using Python, SQL, and Tableau.
-
-Day 2:
-- Created initial brawler performance dataset with 104 brawlers
-- Extracted rank, win rate, use rate, and meta score from raw website data (https://brawlytix.com/meta-tracker)
-- Built a Python script to convert raw copied data into a clean CSV
+- Additional attributes
+- Machine learning models
+- MetaScore prediction
+- Feature importance analysis
