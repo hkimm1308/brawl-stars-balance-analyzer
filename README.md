@@ -52,6 +52,16 @@ Tanks have the highest average win rate among analyzed classes.
 
 Very-long-range brawlers have higher average MetaScores despite lower win rates.
 
+## Visualizations
+
+### Health vs Win Rate
+
+![Health vs Win Rate](charts/health_vs_win_rate.png)
+
+### Health vs Meta Score
+
+![Health vs Meta Score](charts/health_vs_meta_score.png)
+
 ## Technologies
 
 - Python
