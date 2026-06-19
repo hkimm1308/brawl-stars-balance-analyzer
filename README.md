@@ -32,6 +32,30 @@ Contains:
 - Health
 - RangeCategory
 
+## Project Structure
+
+```text
+brawl-stars-balance-analyzer/
+├── data/
+│   ├── brawler_performance.csv
+│   ├── brawler_performance_scraped.csv
+│   ├── brawler_attributes.csv
+│   └── brawler_attributes_scraped.csv
+│
+├── src/
+│   ├── collect_brawler_attributes.py
+│   ├── attribute_analysis.py
+│   ├── exploratory_analysis.py
+│   └── basic_performance_analysis.py
+│
+├── charts/
+│   ├── health_vs_win_rate.png
+│   ├── health_vs_meta_score.png
+│   ├── average_meta_score_by_class.png
+│   └── average_win_rate_by_class.png
+│
+└── README.md
+
 ## Key Findings
 
 ### 1. MetaScore and WinRate Are Weakly Related
