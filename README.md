@@ -55,16 +55,12 @@ brawl-stars-balance-analyzer/
 │   └── average_win_rate_by_class.png
 │
 └── README.md
-
+```
 ## Key Findings
 
 ### 1. MetaScore and WinRate Are Weakly Related
 
-Correlation:
-
-```text
-0.184
-```
+Correlation: 0.184
 
 This suggests MetaScore captures factors beyond raw win rate.
 
