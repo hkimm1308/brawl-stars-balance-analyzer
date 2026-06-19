@@ -1,7 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 performance_df = pd.read_csv("data/brawler_performance.csv")
-attributes_df = pd.read_csv("data/brawler_attributes.csv")
+attributes_df = pd.read_csv("data/brawler_attributes_scraped.csv")
 
 print("Performance Shape:")
 print(performance_df.shape)
@@ -15,6 +16,10 @@ merged_df = performance_df.merge(
     on="Name",
     how="inner"
 )
+
+# Check that the merge worked correctly and that we have the expected number of rows and columns in the merged DataFrame.
+print("\nMerged Shape:")
+print(merged_df.shape)
 
 # Lets look at the average win rate by class to see if there are any trends in the data. 
 # We group the merged DataFrame by the "Class" column and calculate the mean win rate for each class, 
@@ -66,7 +71,7 @@ print(
     )
 )
 
-import matplotlib.pyplot as plt
+
 
 # Chart 1: Health vs Win Rate
 plt.figure()
@@ -100,3 +105,72 @@ plt.title("Health vs Meta Score")
 plt.tight_layout()
 plt.savefig("charts/health_vs_meta_score.png")
 plt.close()
+
+# Start Day 6
+
+# Chart 3: Average Meta Score by Class
+avg_meta_by_class = (
+    merged_df.groupby("Class")["MetaScore"]
+    .mean()
+    .sort_values(ascending=False)
+)
+
+plt.figure()
+
+avg_meta_by_class.plot(kind="bar")
+
+plt.xlabel("Class")
+plt.ylabel("Average Meta Score")
+plt.title("Average Meta Score by Class")
+
+plt.tight_layout()
+plt.savefig("charts/average_meta_score_by_class.png")
+plt.close()
+
+# Chart 4: Average Win Rate by class
+avg_wr_by_class = (
+    merged_df.groupby("Class")["WinRate"]
+    .mean()
+    .sort_values(ascending=False)
+)
+
+plt.figure()
+
+avg_wr_by_class.plot(kind="bar")
+
+plt.xlabel("Class")
+plt.ylabel("Average Win Rate")
+plt.title("Average Win Rate by Class")
+
+plt.tight_layout()
+plt.savefig("charts/average_win_rate_by_class.png")
+plt.close()
+
+
+class_summary = merged_df.groupby("Class").agg({
+    "WinRate": "mean",
+    "MetaScore": "mean"
+})
+
+class_summary["MetaMinusWin"] = (
+    class_summary["MetaScore"]
+    - class_summary["WinRate"] / 10
+)
+
+print(class_summary)
+
+# Chart 5: Meta Score by Rarity
+print("\nAverage Meta Score by Rarity")
+print(
+    merged_df.groupby("Rarity")["MetaScore"]
+    .mean()
+    .sort_values(ascending=False)
+)
+
+# Chart 6: Average Win Rate by Rarity
+print("\nAverage Win Rate by Rarity")
+print(
+    merged_df.groupby("Rarity")["WinRate"]
+    .mean()
+    .sort_values(ascending=False)
+)

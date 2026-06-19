@@ -1,0 +1,103 @@
+Name,Health,Damage,MovementSpeed,RangeCategory,Rarity,Class
+Bolt,10800,3600,Very Fast,Short,Epic,Tank
+Colette,7200,2200,Normal,Long,Epic,Damage Dealer
+Damian,11200,1400,Fast,Short,Mythic,Tank
+Bo,7600,3 x 1280,Normal,Long,Epic,Controller
+Chester,7600,3 x 1340,Fast,Long,Legendary,Damage Dealer
+Najia,6800,800,Fast,Very Long,Mythic,Damage Dealer
+Griff,7200,9 x 560,Normal,Long,Epic,Controller
+Mina,7200,1600,Fast,Long,Mythic,Damage Dealer
+Bibi,10000,2800,Very Fast,Short,Epic,Tank
+Edgar,7200,2 x 1080,Very Fast,Short,Epic,Assassin
+Fang,9000,2720,Fast,Very Long,Mythic,Assassin
+Mortis,8000,2000,Very Fast,Short,Mythic,Assassin
+Crow,6000,3 x 640,Very Fast,Long,Legendary,Assassin
+Pierce,6000,1900,Normal,Very Long,Legendary,Marksman
+Bull,10600,5 x 880,Fast,Normal,Rare,Tank
+Otis,7200,3 x 920,Normal,Long,Mythic,Controller
+Byron,5200,760,Normal,Very Long,Mythic,Support
+Brock,6000,2320,Normal,Long,Rare,Marksman
+Emz,7800,1120,Normal,Normal,Epic,Controller
+Colt,6200,6 x 720,Normal,Long,Rare,Damage Dealer
+Starr Nova,7400,1080,Very Fast,Normal,Mythic,Assassin
+Stu,7000,2 x 1080,Normal,Long,Epic,Assassin
+Leon,7200,4 x 960,Very Fast,Very Long,Legendary,Assassin
+Meeple,6600,2520,Normal,Long,Epic,Controller
+Rico,6000,5 x 640,Normal,Very Long,Super Rare,Damage Dealer
+Kenji,8000,1500,Very Fast,Short,Legendary,Assassin
+Kit,6200,2000,Very Fast,Short,Legendary,Support
+Piper,5000,3400,Normal,Very Long,Epic,Marksman
+Nita,8400,1920,Normal,Normal,Rare,Damage Dealer
+Clancy,7000,1400,Normal,Long,Mythic,Damage Dealer
+Tick,4800,3 x 1360,Normal,Long,Super Rare,Artillery
+Spike,6000,1080,Normal,Long,Legendary,Damage Dealer
+Shade,7400,1600,Very Fast,Very Short,Epic,Assassin
+Cordelius,7000,2 x 1600,Very Fast,Normal,Legendary,Assassin
+Mandy,6000,2600,Normal,Long,Epic,Marksman
+Frank,13600,2320,Fast,Normal,Epic,Tank
+Surge,6600,2360,Slow,Normal,Legendary,Damage Dealer
+El Primo,13000,4 x 760,Fast,Short,Rare,Tank
+Bea,5600,1600,Normal,Very Long,Epic,Marksman
+Dynamike,6000,2 x 1600,Fast,Long,Super Rare,Artillery
+Mico,7000,2280,Very Fast,Normal,Mythic,Assassin
+Nani,5000,3 x 1480,Normal,Long,Epic,Marksman
+Poco,8000,1520,Normal,Long,Rare,Support
+Penny,7000,1960,Normal,Long,Super Rare,Artillery
+Tara,6600,3 x 960,Normal,Long,Mythic,Damage Dealer
+Doug,10400,2400,Fast,Short,Mythic,Support
+Lumi,6200,1800,Normal,Long,Mythic,Damage Dealer
+Carl,8400,1480,Normal,Long,Super Rare,Damage Dealer
+Gus,6600,2160,Normal,Very Long,Super Rare,Support
+Lily,8400,2120,Very Fast,Short,Mythic,Assassin
+Buzz,10000,5 x 840,Fast,Short,Mythic,Assassin
+Belle,5800,2080,Normal,Very Long,Epic,Marksman
+Sirius,7400,2 x 1200,Fast,Long,Ultra Legendary,Controller
+Jessie,6600,2120,Normal,Long,Super Rare,Controller
+Angelo,6200,4000,Very Fast,Very Long,Epic,Marksman
+Kaze,8200,1500,Very Fast,Short,Ultra Legendary,Assassin
+Shelly,7800,5 x 600,Fast,Long,Common,Damage Dealer
+Chuck,9400,3 x 1080,Fast,Normal,Mythic,Damage Dealer
+Melodie,7600,3 x 1840,Normal,Long,Mythic,Assassin
+Darryl,11000,10 x 480,Fast,Normal,Super Rare,Tank
+Gale,8000,6 x 560,Normal,Long,Epic,Controller
+Charlie,7400,1600,Normal,Long,Mythic,Controller
+Gene,7600,2000,Normal,Very Long,Mythic,Controller
+Squeak,7600,2160,Normal,Long,Mythic,Controller
+Maisie,8000,3000,Normal,Long,Epic,Marksman
+Grom,6000,2280,Normal,Long,Epic,Artillery
+Jacky,10000,2480,Fast,Short,Super Rare,Tank
+Sandy,8200,1800,Fast,Normal,Legendary,Controller
+Finx,7400,1800,Normal,Long,Mythic,Controller
+Gray,6800,2320,Normal,Long,Mythic,Support
+Alli,7800,2600,Fast,Short,Mythic,Assassin
+Ruffs,6000,2 x 1200,Normal,Long,Mythic,Support
+Lou,7000,3 x 880,Normal,Very Long,Mythic,Controller
+Willow,6600,2400,Normal,Long,Mythic,Controller
+Amber,6800,4200,Normal,Long,Legendary,Controller
+Max,7000,4 x 640,Very Fast,Long,Mythic,Support
+Eve,6200,1280,Normal,Very Long,Mythic,Damage Dealer
+Rosa,10800,3 x 920,Fast,Short,Rare,Tank
+Berry,5200,1320,Normal,Normal,Epic,Support
+Trunk,10400,2800,Fast,Short,Epic,Tank
+Mr. P,7400,1520,Normal,Long,Mythic,Controller
+Pearl,8600,6 x 560,Normal,Long,Epic,Damage Dealer
+Barley,5400,1600,Normal,Long,Rare,Artillery
+Draco,11200,1200,Normal,Normal,Legendary,Tank
+Moe,7200,1000,Fast,Long,Mythic,Damage Dealer
+Gigi,8200,1000,Very Fast,Short,Mythic,Assassin
+Bonnie,10000,2240,Slow,Long,Epic,Marksman
+Lola,8000,6 x 560,Normal,Long,Epic,Damage Dealer
+Buster,10000,2760,Fast,Normal,Mythic,Tank
+Hank,10400,4200,Normal,Short,Epic,Tank
+Juju,6200,2000,Very Fast,Normal,Mythic,Artillery
+Sprout,6400,2080,Normal,Normal,Mythic,Artillery
+Janet,6800,2000,Normal,Normal,Mythic,Marksman
+8-Bit,10400,6 x 640,Very Slow,Very Long,Super Rare,Damage Dealer
+Ash,11800,1600,Normal,Normal,Epic,Tank
+R-T,8200,1400,Very Fast,Very Long,Mythic,Damage Dealer
+Ziggy,6400,1900,Fast,Long,Mythic,Controller
+Sam,11400,2 x 1600,Fast,â€”,Epic,Assassin
+Jae-Yong,7400,1700,Fast,Long,Mythic,Support
+Meg,7400,2 x 600,Fast,Long,Legendary,Tank
+Ollie,10800,2000,Fast,Normal,Mythic,Tank
+Pam,10000,9 x 520,Normal,Long,Epic,Support
