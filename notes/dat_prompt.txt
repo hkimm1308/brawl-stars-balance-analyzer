@@ -1,0 +1,126 @@
+ok got it. Create a CSV for the following Brawl Stars brawlers using the exact columns below.
+
+Columns:
+Name,HasDash,HasHealing,HasStun,HasSlow,HasPet,HasPiercing,HasSplashDamage,HasWallBreak,HasShield,HasInvisibility,HasKnockback,HasAreaControl,AttackStyle,SuperType,SkillCeiling,Notes
+
+Rules:
+
+* Output one row for every brawler listed below.
+* Preserve the exact spelling of every brawler name.
+* Preserve the exact order of the brawlers.
+* Do not omit any brawlers.
+* Do not add any brawlers.
+* Use True or False for all Has* columns.
+* AttackStyle must be exactly one of:
+  Direct, Spread, Thrower, AreaControl, Summon, Melee, Sniper, Other
+* SuperType must be exactly one of:
+  Damage, Mobility, Healing, Summon, Stun, Slow, Shield, AreaControl, Knockback, Utility
+* SkillCeiling must be an integer from 1 to 5.
+* Notes should be less than 15 words.
+* Output only CSV data.
+* Do not include markdown formatting.
+* Start with the header row.
+
+Brawlers:
+Bolt
+Colette
+Damian
+Bo
+Chester
+Najia
+Griff
+Mina
+Bibi
+Edgar
+Fang
+Mortis
+Crow
+Pierce
+Bull
+Otis
+Byron
+Brock
+Emz
+Colt
+Starr Nova
+Stu
+Leon
+Meeple
+Rico
+Kenji
+Kit
+Piper
+Nita
+Clancy
+Tick
+Spike
+Shade
+Cordelius
+Mandy
+Frank
+Surge
+El Primo
+Bea
+Dynamike
+Mico
+Nani
+Poco
+Penny
+Tara
+Doug
+Lumi
+Carl
+Gus
+Lily
+Buzz
+Belle
+Sirius
+Jessie
+Angelo
+Kaze
+Shelly
+Chuck
+Melodie
+Darryl
+Gale
+Charlie
+Gene
+Squeak
+Maisie
+Grom
+Jacky
+Sandy
+Finx
+Gray
+Alli
+Ruffs
+Lou
+Willow
+Amber
+Max
+Eve
+Rosa
+Berry
+Trunk
+Mr. P
+Pearl
+Barley
+Draco
+Moe
+Gigi
+Bonnie
+Lola
+Buster
+Hank
+Juju
+Sprout
+Janet
+8-Bit
+Ash
+R-T
+Ziggy
+Sam
+Jae-Yong
+Meg
+Ollie
+Pam 
