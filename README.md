@@ -1,98 +1,219 @@
 # Brawl Stars Balance Analyzer
 
-A Python data science project exploring Brawl Stars balance, meta rankings, and gameplay characteristics.
+An end-to-end machine learning project exploring what makes a Brawl Stars brawler strong.
 
-## Project Overview
+The goal of this project is to investigate which gameplay characteristics contribute most to a brawler's success, engineer meaningful features from game mechanics, and build machine learning models capable of predicting overall competitive strength.
 
-This project analyzes Brawl Stars performance data to identify:
+---
 
-- Underused brawlers
-- Overused brawlers
-- Relationships between win rate and meta rankings
-- Factors that contribute to brawler strength
+## Project Goals
 
-## Current Datasets
+This project follows a complete data science workflow:
 
-### Performance Dataset
+- Collect gameplay and performance data
+- Clean and validate datasets
+- Engineer meaningful gameplay features
+- Perform exploratory data analysis
+- Visualize trends and relationships
+- Train and evaluate machine learning models
+- Improve the dataset through iterative feature engineering
 
-Contains:
+Ultimately, the long-term goal is to predict the expected strength of an entirely new brawler before release using only its design characteristics.
 
-- Rank
-- Name
-- WinRate
-- UseRate
-- MetaScore
+---
 
-### Attributes Dataset
+## Data Sources
 
-Contains:
+The project combines multiple datasets into one machine learning dataset.
 
-- Name
+### Performance Data
+
+- Win Rate
+- Use Rate
+- Meta Score
+- Overall Rank
+
+### Gameplay Attributes
+
 - Class
 - Health
-- RangeCategory
+- Damage
+- Projectile Count
+- Damage per Projectile
+- Total Damage
+- Movement Speed
+- Range Category
+- Rarity
 
-## Project Structure
+### Engineered Gameplay Features
 
-```text
+Binary gameplay mechanics including:
+
+- Dash
+- Healing
+- Stun
+- Slow
+- Shield
+- Wall Break
+- Splash Damage
+- Piercing
+- Knockback
+- Area Control
+- Pets
+- Invisibility
+
+Additional engineered features include:
+
+- Attack Style
+- Super Type
+- Skill Ceiling
+
+---
+
+## Project Workflow
+
+```
+Collect Data
+      ↓
+Clean Data
+      ↓
+Feature Engineering
+      ↓
+Dataset Validation
+      ↓
+Exploratory Data Analysis
+      ↓
+Visualization
+      ↓
+Machine Learning
+      ↓
+Model Evaluation
+      ↓
+Feature Engineering Improvements
+```
+
+---
+
+## Current Project Structure
+
+```
 brawl-stars-balance-analyzer/
+
 ├── data/
-│   ├── brawler_performance.csv
-│   ├── brawler_performance_scraped.csv
-│   ├── brawler_attributes.csv
-│   └── brawler_attributes_scraped.csv
+│   ├── raw datasets
+│   ├── cleaned datasets
+│   └── brawler_final_dataset.csv
 │
 ├── src/
-│   ├── collect_brawler_attributes.py
-│   ├── attribute_analysis.py
-│   ├── exploratory_analysis.py
-│   └── basic_performance_analysis.py
+│   ├── data collection
+│   ├── data cleaning
+│   ├── feature engineering
+│   ├── exploratory analysis
+│   ├── visualization
+│   └── machine learning
 │
 ├── charts/
-│   ├── health_vs_win_rate.png
-│   ├── health_vs_meta_score.png
-│   ├── average_meta_score_by_class.png
-│   └── average_win_rate_by_class.png
+│   ├── correlation heatmap
+│   ├── class analysis
+│   ├── mechanic analysis
+│   ├── health relationships
+│   └── additional visualizations
+│
+├── reports/
+│   ├── EDA_Report.md
+│   ├── Machine_Learning_Report.md
+│   └── Feature_Engineering_Notes.md
 │
 └── README.md
 ```
-## Key Findings
 
-### 1. MetaScore and WinRate Are Weakly Related
+---
 
-Correlation: 0.184
+## Exploratory Data Analysis
 
-This suggests MetaScore captures factors beyond raw win rate.
+Current analyses include:
 
-### 2. Tanks Have High Win Rates
+- Correlation heatmap
+- Class performance analysis
+- Range analysis
+- Gameplay mechanic analysis
+- Health vs. Win Rate
+- Health vs. Meta Score
+- Feature correlation analysis
 
-Tanks have the highest average win rate among analyzed classes.
+These analyses helped identify relationships between gameplay characteristics and competitive performance while also revealing limitations within the dataset.
 
-### 3. Range Influences MetaScore
+---
 
-Very-long-range brawlers have higher average MetaScores despite lower win rates.
+## Machine Learning
 
-## Visualizations
+Current target:
 
-### Health vs Win Rate
+**Meta Score**
 
-![Health vs Win Rate](charts/health_vs_win_rate.png)
+Current model:
 
-### Health vs Meta Score
+- Random Forest Regressor
 
-![Health vs Meta Score](charts/health_vs_meta_score.png)
+Evaluation metrics:
+
+- Mean Absolute Error (MAE)
+- R² Score
+
+Initial results demonstrated that the current feature set is insufficient for accurate prediction. Rather than indicating a poor algorithm choice, this finding highlights the importance of richer feature engineering and higher-quality input data.
+
+This insight guides the next phase of the project.
+
+---
 
 ## Technologies
 
 - Python
 - Pandas
+- NumPy
 - Matplotlib
+- Scikit-learn
 - Git
 - GitHub
 
+---
+
 ## Future Work
 
-- Additional attributes
-- Machine learning models
-- MetaScore prediction
-- Feature importance analysis
+### Short Term
+
+- Compare multiple machine learning models
+- Evaluate different feature sets
+- Analyze feature importance
+- Improve project documentation
+
+### Long Term
+
+Build Version 2 of the dataset with richer gameplay features including:
+
+- Reload Speed
+- Attack Cooldown
+- DPS
+- Projectile Speed
+- Healing Amount
+- Shield Strength
+- Stun Duration
+- Mobility metrics
+- Utility metrics
+
+The final objective is to develop a **New Brawler Predictor** capable of estimating a brawler's expected competitive strength before release based solely on its design characteristics.
+
+---
+
+## Key Takeaways
+
+This project has evolved from a simple exploratory data analysis into a complete machine learning pipeline emphasizing:
+
+- Data collection
+- Feature engineering
+- Statistical analysis
+- Visualization
+- Predictive modeling
+- Iterative model improvement
+
+One of the most important findings so far is that **better data is often more valuable than a more complex algorithm**, reinforcing the central role of feature engineering in successful machine learning projects.
