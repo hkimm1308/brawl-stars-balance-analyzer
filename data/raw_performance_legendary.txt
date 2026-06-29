@@ -1,0 +1,412 @@
+1
+Damian Icon
+Damian
+57.0	1.95	9.8
+2
+Crow Icon
+Crow
+52.9	4.66	8.9
+3
+Colette Icon
+Colette
+52.8	3.58	8.9
+4
+Mortis Icon
+Mortis
+51.8	4.06	8.7
+5
+Edgar Icon
+Edgar
+51.9	2.63	8.6
+6
+Shade Icon
+Shade
+52.4	1.56	8.5
+7
+Kaze Icon
+Kaze
+52.1	1.78	8.5
+8
+Leon Icon
+Leon
+51.6	2.19	8.5
+9
+Mina Icon
+Mina
+51.1	3.20	8.5
+10
+Penny Icon
+Penny
+51.4	1.52	8.2
+11
+Kenji Icon
+Kenji
+50.4	1.92	8.2
+12
+Lumi Icon
+Lumi
+50.4	2.15	8.2
+13
+Najia Icon
+Najia
+50.0	2.82	8.2
+14
+Chester Icon
+Chester
+50.0	3.95	8.2
+15
+Colt Icon
+Colt
+49.5	3.59	8.1
+16
+Meeple Icon
+Meeple
+49.2	4.19	8.0
+17
+Nita Icon
+Nita
+53.3	1.01	7.9
+18
+Angelo Icon
+Angelo
+50.5	1.40	7.9
+19
+Otis Icon
+Otis
+48.9	3.86	7.9
+20
+Pierce Icon
+Pierce
+48.7	4.76	7.9
+21
+Stu Icon
+Stu
+50.6	1.31	7.8
+22
+Gene Icon
+Gene
+49.6	1.47	7.7
+23
+Charlie Icon
+Charlie
+49.3	1.50	7.7
+24
+Fang Icon
+Fang
+48.7	1.53	7.6
+25
+Brock Icon
+Brock
+48.2	1.84	7.6
+26
+Byron Icon
+Byron
+47.8	2.36	7.6
+27
+Melodie Icon
+Melodie
+51.1	1.02	7.5
+28
+Emz Icon
+Emz
+52.6	0.86	7.4
+29
+Mico Icon
+Mico
+50.6	1.06	7.4
+30
+Bull Icon
+Bull
+49.3	1.24	7.4
+31
+Kit Icon
+Kit
+48.9	1.27	7.4
+32
+Cordelius Icon
+Cordelius
+48.8	1.25	7.3
+33
+Starr Nova Icon
+Starr Nova
+50.8	0.91	7.2
+34
+Belle Icon
+Belle
+49.1	1.13	7.2
+35
+Ruffs Icon
+Ruffs
+47.8	1.34	7.2
+36
+Rico Icon
+Rico
+45.5	1.40	6.8
+37
+Griff Icon
+Griff
+44.2	2.09	6.7
+38
+Nani Icon
+Nani
+47.6	0.96	6.6
+39
+Alli Icon
+Alli
+48.9	0.83	6.5
+40
+Bo Icon
+Bo
+46.6	0.90	6.3
+41
+Bibi Icon
+Bibi
+52.7	0.57	6.2
+42
+Sirius Icon
+Sirius
+52.2	0.59	6.2
+43
+Chuck Icon
+Chuck
+48.8	0.74	6.2
+44
+Gus Icon
+Gus
+47.4	0.74	6.0
+45
+Jae-Yong Icon
+Jae-Yong
+48.3	0.67	5.9
+46
+Trunk Icon
+Trunk
+54.1	0.47	5.8
+47
+Lily Icon
+Lily
+46.8	0.71	5.8
+48
+Amber Icon
+Amber
+52.1	0.48	5.5
+49
+Carl Icon
+Carl
+47.9	0.55	5.3
+50
+Lola Icon
+Lola
+51.8	0.41	5.0
+51
+Spike Icon
+Spike
+46.6	0.54	5.0
+52
+Finx Icon
+Finx
+51.4	0.41	4.9
+53
+Tara Icon
+Tara
+50.3	0.41	4.8
+54
+Mandy Icon
+Mandy
+47.4	0.48	4.8
+55
+Piper Icon
+Piper
+45.1	0.55	4.8
+56
+Bea Icon
+Bea
+50.4	0.35	4.3
+57
+Berry Icon
+Berry
+49.6	0.36	4.3
+58
+Poco Icon
+Poco
+52.7	0.28	4.0
+59
+Moe Icon
+Moe
+46.1	0.38	4.0
+60
+Gray Icon
+Gray
+44.4	0.40	3.9
+61
+Juju Icon
+Juju
+51.2	0.25	3.5
+62
+Squeak Icon
+Squeak
+48.3	0.29	3.5
+63
+Sprout Icon
+Sprout
+53.8	0.21	3.3
+64
+Willow Icon
+Willow
+52.6	0.22	3.3
+65
+Buster Icon
+Buster
+52.1	0.23	3.3
+66
+Buzz Icon
+Buzz
+50.6	0.24	3.3
+67
+Doug Icon
+Doug
+53.3	0.21	3.2
+68
+Darryl Icon
+Darryl
+47.9	0.26	3.2
+69
+Frank Icon
+Frank
+52.3	0.21	3.1
+70
+Sandy Icon
+Sandy
+50.6	0.21	3.0
+71
+Pearl Icon
+Pearl
+50.4	0.22	3.0
+72
+Eve Icon
+Eve
+47.8	0.23	3.0
+73
+Clancy Icon
+Clancy
+45.0	0.25	2.9
+74
+Barley Icon
+Barley
+50.2	0.20	2.8
+75
+Janet Icon
+Janet
+48.8	0.21	2.8
+76
+Shelly Icon
+Shelly
+47.8	0.21	2.7
+77
+Draco Icon
+Draco
+51.6	0.17	2.6
+78
+Tick Icon
+Tick
+44.8	0.20	2.4
+79
+Ziggy Icon
+Ziggy
+49.9	0.16	2.3
+80
+Dynamike Icon
+Dynamike
+45.6	0.17	2.2
+81
+Surge Icon
+Surge
+43.7	0.19	2.2
+82
+Gigi Icon
+Gigi
+51.1	0.14	2.1
+83
+Hank Icon
+Hank
+49.1	0.14	2.1
+84
+Lou Icon
+Lou
+44.7	0.18	2.1
+85
+R-T Icon
+R-T
+44.0	0.18	2.1
+86
+Glowy Icon
+Glowy
+53.5	0.12	2.0
+87
+Rosa Icon
+Rosa
+50.4	0.13	2.0
+88
+Ash Icon
+Ash
+50.4	0.13	2.0
+89
+Gale Icon
+Gale
+44.7	0.16	1.9
+90
+Grom Icon
+Grom
+49.9	0.11	1.6
+91
+Maisie Icon
+Maisie
+49.7	0.10	1.6
+92
+Mr. P Icon
+Mr. P
+47.4	0.11	1.6
+93
+Ollie Icon
+Ollie
+47.0	0.11	1.6
+94
+Max Icon
+Max
+48.5	0.10	1.5
+95
+8-Bit Icon
+8-Bit
+48.3	0.10	1.5
+96
+Jessie Icon
+Jessie
+45.8	0.10	1.3
+97
+Bonnie Icon
+Bonnie
+49.3	0.07	1.0
+98
+Larry & Lawrie Icon
+Larry & Lawrie
+48.7	0.07	1.0
+99
+El Primo Icon
+El Primo
+41.3	0.09	1.0
+100
+Jacky Icon
+Jacky
+48.7	0.05	0.8
+101
+Sam Icon
+Sam
+48.3	0.04	0.7
+102
+Pam Icon
+Pam
+42.2	0.05	0.7
+103
+Meg Icon
+Meg
+48.3	0.04	0.6
