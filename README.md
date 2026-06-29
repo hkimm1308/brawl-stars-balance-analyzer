@@ -217,3 +217,11 @@ This project has evolved from a simple exploratory data analysis into a complete
 - Iterative model improvement
 
 One of the most important findings so far is that **better data is often more valuable than a more complex algorithm**, reinforcing the central role of feature engineering in successful machine learning projects.
+
+## Additional Documentation
+
+For more detailed analyses, see:
+
+- [Exploratory Data Analysis Report](reports/EDA_Report.md)
+- [Machine Learning Report](reports/Machine_Learning_Report.md)
+- [Dataset Version 2 Plan](reports/Dataset_v2_Plan.md)
