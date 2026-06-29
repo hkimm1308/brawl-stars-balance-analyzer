@@ -22,6 +22,16 @@ Ultimately, the long-term goal is to predict the expected strength of an entirel
 
 ---
 
+## Current Results
+
+- Built a merged dataset containing gameplay, attribute, and performance data for over 100 brawlers.
+- Engineered 15+ gameplay mechanic features.
+- Created multiple exploratory visualizations including class analysis, health analysis, and a correlation heatmap.
+- Trained an initial Random Forest regression model to predict Meta Score.
+- Identified feature engineering as the primary limitation to predictive performance, and made a plan to enrich the dataset.
+
+---
+
 ## Data Sources
 
 The project combines multiple datasets into one machine learning dataset.
