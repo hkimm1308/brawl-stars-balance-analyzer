@@ -1,0 +1,107 @@
+Name,Rarity,PrimaryRole,AttackArchetype,RangeClass,RangeScore,MobilityScore,EngageScore,EscapeScore,AimPrecision,PositioningImportance,DecisionComplexity,MechanicalDifficulty,SkillFloor,SkillCeiling,BurstDamageScore,SustainedDamageScore,AreaControlScore,LaneControlScore,ObjectivePressureScore,TeamUtilityScore,SurvivabilityScore,PokePressureScore,CloseRangeThreatScore,HasDash,HasJumpOrTeleport,HasHealing,HealingType,HasStun,HasSlow,HasKnockback,HasPull,HasSilence,HasShield,HasInvisibility,HasPetOrSummon,HasPiercing,HasSplashDamage,HasWallBreak,CanZone,CanScoutBushes,SuperType,SkillScalingHypothesis,ManualReviewFlag
+Shelly,Starting,Tank Counter,Shotgun,Normal,2,2,2,2,3,3,3,3,1,3,4,3,2,3,3,2,3,3,5,0,0,0,None,0,1,1,0,0,0,0,0,0,1,1,0,1,Control,Low-mid skill; stronger when positioning/bush control improves,0
+Colt,Rare,Damage Dealer,Linear Multi-Shot,Long,4,2,2,2,5,3,3,4,3,5,4,5,2,4,3,2,2,4,3,0,0,0,None,0,0,0,0,0,0,0,0,1,0,1,0,1,Damage,Likely positive scaling due to aim and wall-break precision,0
+Bull,Rare,Tank,Shotgun,Short,1,3,4,2,3,3,3,3,2,3,5,3,2,3,3,2,4,1,5,1,0,0,None,0,0,1,0,0,0,0,0,0,0,1,0,1,Mobility,Often lower scaling; counterplay increases at high skill,0
+Brock,Rare,Marksman,Rocket Projectile,Long,5,2,2,2,4,3,3,3,3,4,4,3,3,4,3,2,2,5,3,0,0,0,None,0,0,0,0,0,0,0,0,0,1,1,1,1,Damage,"Positive scaling from aim, spacing, and wall-break value",0
+Barley,Rare,Thrower,Lobbed Area Denial,Long,4,2,2,2,3,5,4,3,3,4,3,3,5,4,4,2,2,4,3,0,0,1,Self/Area,0,1,0,0,0,0,0,0,0,1,0,1,1,AreaControl,Positive scaling with map knowledge and choke control,0
+Nita,Rare,Controller,Midrange Splash,Normal,3,2,2,2,3,3,3,3,3,3,3,3,3,3,4,3,4,3,3,0,0,0,None,1,0,0,0,0,0,0,1,0,1,0,1,1,Summon,Moderate scaling through bear pressure and timing,0
+El Primo,Rare,Tank,Melee,Short,1,4,5,2,3,3,3,3,2,3,4,3,2,3,3,2,5,1,5,0,1,1,Self,0,0,1,0,0,0,0,0,0,0,1,0,1,Mobility,Can scale with engage timing but vulnerable to coordinated kiting,0
+Poco,Rare,Support,Wide Cone,Normal,3,2,2,2,1,3,3,3,1,3,3,2,3,3,4,5,4,3,3,0,0,1,Ally/Team,0,0,0,0,0,0,0,0,1,0,0,0,1,Healing,Team-comp dependent; scaling mostly through positioning and heal timing,0
+Rosa,Rare,Tank,Short Cone,Short,1,2,2,2,3,3,3,3,2,3,3,3,3,3,4,2,5,3,5,0,0,1,Self,0,1,0,0,0,1,0,0,1,0,0,0,1,Shield,Usually lower scaling outside favorable maps; bush control matters,0
+Rico,Super Rare,Damage Dealer,Ricochet Projectile,Long,4,2,2,2,5,4,3,5,3,5,3,5,2,5,3,2,2,4,3,0,0,0,None,0,0,0,0,0,0,0,0,1,0,0,0,1,Damage,Strong positive scaling due to geometry and bounce mastery,0
+Jessie,Super Rare,Controller,Chain Projectile,Normal,3,2,2,2,3,3,4,3,3,4,3,3,4,3,5,3,3,3,3,0,0,0,None,0,1,0,0,0,0,0,1,1,0,0,1,1,Summon,Moderate-positive scaling via turret placement and chaining,0
+Dynamike,Super Rare,Thrower,Double Lobbed Projectile,Long,4,2,2,2,5,5,3,5,4,5,5,3,4,4,3,2,1,3,3,0,1,0,None,1,0,0,0,0,0,0,0,0,1,1,1,1,Damage,High positive scaling; prediction and positioning intensive,0
+Darryl,Super Rare,Tank Assassin,Shotgun Roll,Short,1,4,4,3,3,3,3,3,3,4,5,3,2,3,3,2,4,3,5,1,0,0,None,0,0,1,0,0,1,0,0,0,0,0,0,1,Mobility,Moderate scaling from engage timing and matchup selection,0
+Penny,Super Rare,Controller,Splash Projectile,Long,4,2,2,2,3,4,4,3,3,3,3,3,4,4,5,3,3,3,3,0,0,0,None,0,0,0,0,0,0,0,1,0,1,0,1,1,Summon,Moderate-positive scaling through cannon placement,0
+Tick,Super Rare,Thrower,Mine Area Denial,Long,5,2,2,2,3,5,4,3,3,4,3,3,5,5,4,2,1,3,3,0,0,0,None,0,0,1,0,0,0,0,1,0,1,0,1,1,AreaControl,Positive scaling on control maps; punished by high-skill aggression,0
+Carl,Super Rare,Damage Dealer,Boomerang Projectile,Long,4,2,2,2,4,3,4,4,3,4,3,4,2,4,3,2,3,3,3,1,0,0,None,0,0,0,0,0,0,0,0,1,0,1,0,1,Damage,Positive scaling through projectile control and matchup spacing,0
+8-Bit,Super Rare,Damage Dealer,Slow Turret DPS,Long,4,1,1,1,3,3,3,3,3,3,3,5,4,3,5,4,4,4,3,0,0,0,None,0,0,0,0,0,0,0,1,0,0,0,1,1,Buff,High raw stats but lower mobility; scaling depends on turret discipline,0
+Jacky,Super Rare,Tank,Circular AoE,Short,1,2,2,2,1,3,3,3,1,2,3,3,3,3,3,2,5,3,5,0,0,0,None,0,0,0,1,0,1,0,0,0,1,0,0,1,Control,Likely lower scaling; simple kit and counterplay grows,0
+Gus,Super Rare,Support,Long Projectile,Long,4,2,2,2,4,4,4,3,3,4,3,3,2,3,3,5,3,4,3,0,0,1,Ally,0,0,1,0,0,1,0,0,0,0,0,0,1,Shield,Positive scaling through shield timing and long-range support,0
+Bo,Epic,Controller,Triple Projectile,Long,4,2,2,2,4,4,4,3,2,4,4,4,4,4,4,3,3,4,3,0,0,0,None,1,1,1,0,0,0,0,1,0,1,1,1,1,Control,"Positive scaling from mines, vision, and lane prediction",0
+Piper,Epic,Marksman,Sniper,Very Long,5,2,1,3,5,5,4,4,3,5,5,2,2,5,3,2,2,5,1,0,1,0,None,0,1,1,0,0,0,0,0,0,0,1,0,1,Damage,"Strong positive scaling from aim, range management, and escape timing",0
+Pam,Epic,Support Tank,Wide Projectile,Normal,3,2,2,2,2,3,3,2,2,3,3,4,3,3,4,5,5,2,3,0,0,1,Ally/Area,0,0,1,0,0,0,0,1,0,0,0,1,1,Healing,Moderate scaling; value comes from sustain and turret placement,0
+Frank,Epic,Tank,Delayed AoE Swing,Normal,2,1,2,1,2,4,4,3,2,4,5,3,4,3,5,3,5,1,5,0,0,0,None,1,0,1,0,0,0,0,0,1,1,1,1,1,Stun,Mixed scaling; huge payoff but predictable windup,0
+Bibi,Epic,Tank Assassin,Melee Knockback,Short,1,4,4,4,2,4,4,3,2,4,4,3,2,3,4,2,4,1,5,1,0,1,Self,0,1,1,0,0,1,0,0,1,0,0,1,1,Mobility,"Positive scaling from movement, knockback timing, and wall bounce",0
+Bea,Epic,Marksman,Charged Sniper,Very Long,5,2,1,2,5,4,4,4,3,5,5,2,3,5,3,2,2,5,1,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Slow,Positive scaling from aim and charged-shot discipline,0
+Emz,Epic,Controller,Lingering Cone,Normal,3,2,2,2,2,4,3,2,2,3,3,3,5,4,4,2,3,2,3,0,0,0,None,0,1,1,0,0,0,0,0,0,1,0,1,1,AreaControl,Moderate scaling; spacing and zone timing matter,0
+Gale,Epic,Controller,Spread Projectile,Long,4,2,2,3,3,4,4,3,2,4,3,3,4,4,4,4,3,3,2,0,1,0,None,1,1,1,0,0,0,0,0,1,1,1,1,1,Control,Positive scaling through anti-aggro timing and map control,0
+Nani,Epic,Marksman,Converging Projectile,Very Long,5,2,1,2,5,5,5,5,4,5,5,2,2,5,3,2,2,5,1,0,1,0,None,1,0,1,0,0,0,0,0,1,1,1,1,1,Damage,Very high positive scaling from aim and remote-control super,0
+Colette,Epic,Tank Counter,Percent Damage,Long,4,3,3,3,4,4,4,3,2,4,4,3,2,4,4,2,3,4,2,1,0,1,Self,0,0,1,0,0,1,0,0,0,0,0,1,1,Damage,Positive scaling in objective/team modes; matchup knowledge matters,0
+Edgar,Epic,Assassin,Melee Lifesteal,Short,1,5,5,3,1,3,3,2,1,3,4,4,1,1,3,1,3,1,5,0,1,1,Self,0,1,0,0,0,1,0,0,0,0,0,0,1,Mobility,Often negative/high variance at top skill due to counterplay,0
+Stu,Epic,Assassin,Dash Projectile,Normal,3,5,4,5,4,5,5,5,4,5,3,4,2,4,4,2,3,3,4,1,0,1,Self,0,0,1,0,0,0,0,0,0,0,0,1,1,Mobility,Strong positive scaling from chaining dashes and spacing,0
+Belle,Epic,Marksman,Long Bounce Shot,Very Long,5,2,1,2,5,4,4,4,3,5,3,3,3,5,3,3,2,5,1,0,0,0,None,0,1,0,0,0,0,0,0,1,0,0,1,1,Debuff,Positive scaling from mark targeting and bounce pressure,0
+Grom,Epic,Thrower,Cross Lobbed Projectile,Long,4,2,1,2,5,5,4,5,4,5,5,2,4,4,3,2,1,4,1,0,0,0,None,0,0,1,0,0,0,0,0,1,1,1,1,1,Damage,High positive scaling from prediction and map geometry,0
+Griff,Epic,Damage Dealer,Coin Burst,Normal,3,2,2,2,3,3,3,3,2,4,5,4,3,3,4,2,3,3,4,0,0,0,None,0,0,1,0,0,0,0,1,1,1,1,1,1,Damage,Moderate scaling; strong wall-break and burst discipline,0
+Ash,Epic,Tank,Rage Melee,Short,1,3,4,3,2,4,4,3,3,4,4,4,2,2,4,1,5,1,5,0,0,1,Self,0,1,1,0,0,0,0,1,1,0,0,1,1,Damage,Positive scaling from rage management and timing,0
+Lola,Epic,Damage Dealer,Clone Projectile,Long,4,2,2,2,4,4,5,4,3,5,4,4,3,4,4,3,3,4,2,0,0,0,None,0,0,0,0,0,0,0,1,0,0,0,1,1,Summon,Positive scaling through ego placement and angle pressure,0
+Bonnie,Epic,Hybrid Marksman,Transform Projectile,Long,4,3,4,2,4,4,5,4,3,5,4,3,2,4,4,2,4,4,4,0,1,0,None,0,0,1,0,0,0,0,0,1,1,0,1,1,Mobility,Positive scaling from form-switch timing and engage choice,0
+Sam,Epic,Tank Assassin,Melee Glove,Short,1,4,5,4,2,5,5,4,3,5,5,4,2,2,4,2,5,1,5,1,0,1,Self,0,1,1,1,0,0,0,1,1,0,0,1,1,Mobility,High positive scaling from glove cycling and pressure timing,0
+Mandy,Epic,Marksman,Focused Sniper,Very Long,5,1,1,1,5,5,4,4,3,5,5,2,2,5,3,2,1,5,1,0,0,0,None,0,1,0,0,0,0,0,0,1,0,1,1,1,Damage,Positive scaling from positioning and long-range precision,0
+Maisie,Epic,Damage Dealer,Delayed Projectile,Long,4,3,3,3,5,4,4,4,3,5,5,3,3,4,4,2,3,4,3,1,0,0,None,1,1,1,0,0,0,0,0,1,1,1,1,1,Control,Positive scaling from projectile timing and anti-dive control,0
+Hank,Epic,Tank Controller,Charge Bubble,Normal,2,2,2,2,2,4,4,3,2,4,4,3,3,3,4,2,5,2,4,0,0,0,None,0,1,1,0,0,0,0,0,1,1,0,1,1,Damage,Mixed scaling; positioning and charge discipline matter,0
+Pearl,Epic,Damage Dealer,Heat Projectile,Long,4,2,2,2,3,4,4,3,2,4,4,4,3,4,4,2,4,4,3,0,0,0,None,0,1,1,0,0,0,0,0,1,1,1,1,1,Damage,Moderate-positive scaling via heat management and spacing,0
+Larry & Lawrie,Epic,Thrower Controller,Lobbed Summon,Long,4,2,2,2,3,5,5,4,3,5,4,3,5,4,5,3,3,4,2,0,0,0,None,0,1,1,0,0,0,0,1,1,1,0,1,1,Summon,Positive scaling through thrower control and summon pressure,0
+Angelo,Epic,Marksman,Charged Sniper,Very Long,5,4,2,4,5,5,4,4,3,5,5,2,2,5,3,2,2,5,1,0,0,0,None,0,1,0,0,0,0,0,0,1,0,0,1,1,Damage,"Strong positive scaling from charge timing, aim, and map mobility",0
+Berry,Epic,Support Thrower,Lobbed Healing/Area,Long,4,2,2,2,3,5,5,4,3,5,3,3,5,4,4,5,3,4,2,0,0,1,Ally/Area,0,1,1,0,0,0,0,0,1,1,0,1,1,Healing,Positive scaling from area denial and team sustain placement,0
+Shade,Epic,Assassin,Short Burst,Short,1,5,5,4,3,4,4,4,3,5,5,3,2,2,4,2,3,1,5,1,1,0,None,0,1,1,0,0,0,1,0,1,0,0,1,1,Mobility,Likely positive scaling from mobility/pathing; review exact kit,1
+Meeple,Epic,Controller,Utility Projectile,Normal,3,2,2,2,3,4,5,3,2,4,3,3,4,3,4,4,3,3,2,0,0,0,None,1,1,1,0,0,0,0,0,1,1,0,1,1,Utility,Likely positive scaling through utility sequencing; review exact kit,1
+Trunk,Epic,Tank Controller,Short AoE,Short,1,3,4,2,2,4,4,3,2,4,4,3,3,2,4,2,5,1,5,0,0,0,None,1,1,1,0,0,1,0,0,1,1,1,1,1,Control,Likely matchup/map dependent; review exact kit,1
+Bolt,Epic,Damage Dealer,Fast Projectile,Long,4,3,3,3,4,4,4,4,3,5,4,4,3,4,4,2,3,4,3,1,0,0,None,0,1,1,0,0,0,0,0,1,1,0,1,1,Damage,Likely positive scaling from aim and mobility; review exact kit,1
+Mortis,Mythic,Assassin,Dash Melee,Short,5,5,5,2,5,5,5,4,5,4,3,1,1,3,1,3,1,5,1,0,1,Self,0,1,1,0,0,0,0,0,0,0,0,0,1,1,Mobility,"High positive scaling from dash economy, matchup knowledge, and timing",0
+Tara,Mythic,Controller,Triple Card,Normal,3,2,2,2,3,4,4,3,4,4,3,4,3,5,3,3,3,3,0,0,1,Self,1,1,1,1,0,0,1,1,1,0,0,1,1,1,Control,Positive scaling from pull timing and teamfight setup,0
+Gene,Mythic,Support Controller,Split Projectile,Long,4,2,2,2,3,5,5,3,3,5,3,3,3,4,4,5,3,4,2,0,0,1,Ally/Area,0,1,1,1,0,0,0,1,0,0,0,1,1,Pull,Strong positive scaling from pull decisions and poke control,0
+Mr. P,Mythic,Controller,Bouncing Projectile,Long,4,2,1,2,3,4,4,3,2,4,3,3,4,4,4,3,3,4,1,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,Summon,Positive scaling through porter pressure and lane attrition,0
+Max,Mythic,Support Damage,Fast Projectile,Normal,3,5,4,5,4,5,5,4,3,5,3,4,2,4,4,5,3,3,3,1,0,0,None,0,1,0,0,0,0,0,0,0,0,0,1,1,Mobility,"Strong positive scaling from tempo, dodging, and speed timing",0
+Sprout,Mythic,Thrower Controller,Lobbed Bounce,Long,4,2,1,2,4,5,5,4,3,5,3,3,5,5,4,4,2,4,1,0,0,1,Self,0,1,1,0,0,1,0,0,1,0,1,1,1,Control,Positive scaling from wall placement and map geometry,0
+Lou,Mythic,Controller,Freeze Projectile,Long,4,2,2,2,4,4,4,3,3,4,3,3,5,4,5,3,3,4,2,0,0,0,None,1,1,1,0,0,0,0,0,0,0,0,1,1,Stun,Positive scaling from freeze setup and area denial,0
+Byron,Mythic,Support Marksman,Heal/Damage Projectile,Very Long,5,2,1,2,5,5,5,4,3,5,3,3,3,5,4,5,2,5,1,0,0,1,Ally/Self,0,1,0,0,0,0,0,1,0,0,0,1,1,Healing,"Strong positive scaling from aim, target selection, and sustain timing",0
+Ruffs,Mythic,Support Controller,Ricochet Support,Long,4,2,2,2,4,5,5,4,3,5,3,3,4,4,4,5,3,4,2,0,0,0,None,1,1,1,0,0,0,0,0,1,1,1,1,1,Buff,Positive scaling from power-up decisions and wall-break utility,0
+Squeak,Mythic,Controller,Sticky Area Projectile,Long,4,2,1,2,3,4,4,3,2,4,3,3,5,4,4,3,2,4,1,0,0,0,None,0,1,1,0,0,0,0,0,1,1,0,1,1,AreaControl,Positive scaling through choke denial and delayed pressure,0
+Buzz,Mythic,Assassin,Stun Engage,Short,1,5,5,4,3,5,5,4,3,5,5,3,2,2,4,2,4,1,5,1,1,0,None,1,1,1,0,0,0,0,0,0,0,0,1,1,Mobility,High positive scaling from hook/stun timing and vision,0
+Fang,Mythic,Assassin,Kick Chain,Normal,3,5,5,4,4,4,5,4,3,5,5,3,2,3,5,2,4,3,5,1,0,0,None,1,1,1,0,0,0,0,0,0,0,0,1,1,Mobility,High scaling from engage chains and target selection,0
+Eve,Mythic,Damage Controller,Egg Projectile,Long,4,3,2,3,4,4,4,3,3,4,3,3,4,4,4,3,3,4,2,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,Summon,Moderate-positive scaling from water/pathing and hatchling pressure,0
+Janet,Mythic,Marksman,Cone Charge,Long,4,4,3,5,4,5,4,4,3,5,4,3,3,4,4,3,3,4,2,0,1,0,None,0,1,1,0,0,0,0,0,1,1,0,1,1,Mobility,Positive scaling from charge control and escape timing,0
+Otis,Mythic,Controller,Multi Projectile Silence,Normal,3,2,2,2,3,4,4,3,2,4,4,4,3,3,4,3,3,3,3,0,0,0,None,0,1,0,0,1,0,0,0,1,0,0,1,1,Silence,Positive scaling from silence timing and anti-carry control,0
+Buster,Mythic,Tank Support,Short Cone Shield,Short,2,2,3,2,2,4,4,3,2,4,4,3,3,3,4,5,5,1,5,0,0,0,None,0,1,1,1,0,1,0,0,1,0,0,1,1,Shield,Positive scaling from shield timing and team positioning,0
+Gray,Mythic,Support Assassin,Long Projectile Portal,Long,4,4,4,4,5,5,5,5,4,5,4,3,2,4,4,5,3,4,3,0,1,0,None,0,1,1,1,0,0,0,0,0,0,1,1,1,Utility,Very positive scaling from portal utility and precision,0
+R-T,Mythic,Controller,Mark/Detach,Long,4,2,2,2,4,5,5,4,3,5,4,3,3,4,4,3,3,4,3,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Damage,Positive scaling through mark value and form timing,0
+Willow,Mythic,Thrower Controller,Poison Lob/Mind Control,Long,4,2,1,2,4,5,5,4,3,5,3,3,5,4,4,3,2,4,1,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Control,Positive scaling from mind-control targeting and thrower positioning,0
+Doug,Mythic,Support Tank,Circular Heal/Damage,Short,1,2,3,2,1,3,4,2,1,3,3,3,2,2,4,5,5,1,5,0,0,1,Ally/Self,0,0,0,0,0,0,0,0,1,0,0,1,1,Healing,Mixed/lower scaling due to short range but revive timing matters,0
+Chuck,Mythic,Controller,Rail Mobility,Long,4,5,4,5,3,5,5,5,4,5,4,3,4,4,5,3,4,4,3,1,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Mobility,Very high scaling from route planning and objective pressure,0
+Charlie,Mythic,Controller,Yo-Yo/Cocoon,Long,4,2,2,2,4,5,5,4,3,5,3,3,4,4,4,4,3,4,2,0,0,0,None,0,1,1,1,0,0,0,1,1,0,0,1,1,Control,Positive scaling from cocoon timing and teamfight isolation,0
+Mico,Mythic,Assassin,Jump Melee,Short,1,5,5,5,3,5,5,5,4,5,4,3,2,2,4,1,3,1,5,0,1,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Mobility,High skill/high variance; jump timing scales strongly,0
+Melodie,Mythic,Assassin,Orbiting Notes,Normal,3,5,5,5,4,5,5,5,4,5,5,4,2,3,5,2,3,3,5,1,0,0,None,0,1,1,0,0,0,0,0,0,0,0,1,1,Mobility,Strong positive scaling from dash/note management,0
+Lily,Mythic,Assassin,Teleport Burst,Short,1,5,5,4,3,4,4,4,3,5,5,3,2,2,3,1,3,1,5,0,1,0,None,0,1,1,0,1,0,0,0,0,0,0,1,1,Mobility,Positive but matchup-dependent scaling from teleport engage,0
+Clancy,Mythic,Damage Dealer,Stage Scaling Projectile,Normal,3,2,2,2,3,4,5,3,2,4,5,4,3,3,5,2,3,3,3,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,Damage,Positive scaling from progression/resource management,0
+Moe,Mythic,Assassin Controller,Burrow/Drill,Normal,3,4,4,4,3,4,5,4,3,5,4,3,3,3,4,2,4,3,4,1,0,0,None,0,1,1,0,0,0,0,0,1,0,1,1,1,Mobility,Positive scaling through form swap and engage timing,0
+Juju,Mythic,Controller,Elemental Projectile,Long,4,3,2,3,4,5,5,4,3,5,3,3,5,4,4,4,3,4,2,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,AreaControl,Positive scaling from terrain/element choices and control,0
+Ollie,Mythic,Controller,Utility Control,Normal,3,3,3,3,3,4,5,4,3,5,3,3,4,3,4,4,3,3,3,1,0,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Control,Likely positive scaling through utility timing; review exact kit,1
+Lumi,Mythic,Damage Controller,Piercing Projectile,Long,4,3,2,3,4,4,4,4,3,5,4,4,3,4,4,3,3,4,2,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,Damage,Likely positive scaling from aim and lane control; review exact kit,1
+Finx,Mythic,Controller,Utility Projectile,Long,4,3,2,3,4,5,5,4,3,5,3,3,4,4,4,4,3,4,2,0,0,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Utility,Likely positive scaling from utility sequencing; review exact kit,1
+Jae-Yong,Mythic,Support Damage,Music Utility,Normal,3,3,3,3,3,5,5,4,3,5,3,3,3,3,4,5,3,3,2,0,0,1,Ally/Team,0,1,0,0,0,0,0,0,0,0,0,1,1,Buff,Likely team-synergy scaling; review exact kit,1
+Alli,Mythic,Assassin,Mobility Burst,Short,1,5,5,4,3,4,4,4,3,5,5,3,2,2,4,1,3,1,5,1,0,0,None,0,1,1,0,0,0,0,0,0,0,0,1,1,Mobility,Likely positive scaling from engage timing; review exact kit,1
+Mina,Mythic,Controller,Utility Control,Normal,3,3,3,3,3,4,5,4,3,5,4,3,4,3,4,4,3,3,3,0,0,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Control,Likely positive scaling from crowd-control timing; review exact kit,1
+Ziggy,Mythic,Damage Dealer,Projectile Burst,Long,4,3,3,3,4,4,4,4,3,5,5,4,3,4,4,2,3,4,3,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Damage,Likely positive scaling from aim and burst discipline; review exact kit,1
+Gigi,Mythic,Support/Controller,Utility Projectile,Normal,3,3,3,3,3,4,5,4,3,5,3,3,4,3,4,5,3,3,2,0,0,1,Ally/Self,0,1,0,0,0,0,0,0,0,0,0,1,1,Utility,Likely positive scaling from utility and support timing; review exact kit,1
+Glowy,Mythic,Controller,Area Projectile,Long,4,2,2,2,3,4,4,3,2,4,3,3,5,4,4,3,3,4,2,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,AreaControl,Likely control-scaling; review exact kit,1
+Najia,Mythic,Assassin,Mobility Burst,Short,1,5,5,4,3,4,4,4,3,5,5,3,2,2,4,1,3,1,5,1,0,0,None,0,1,1,0,0,0,0,0,0,0,0,1,1,Mobility,Likely positive scaling from mobility and target selection; review exact kit,1
+Damian,Mythic,Damage Dealer,Projectile Control,Long,4,3,3,3,4,4,4,4,3,5,4,4,3,4,4,2,3,4,3,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Damage,Likely positive scaling from aim and control; review exact kit,1
+Starr Nova,Mythic,Controller,Area Utility,Long,4,3,2,3,4,5,5,4,3,5,4,3,5,4,4,4,3,4,2,0,0,0,None,1,1,1,0,0,0,0,0,1,1,1,1,1,AreaControl,Likely positive scaling from area utility; review exact kit,1
+Wendy,Mythic,Controller,Utility Projectile,Normal,3,3,3,3,3,5,5,4,3,5,4,3,4,4,4,4,3,3,2,0,0,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Utility,Newest brawler; preliminary high-skill utility scaling label,1
+Spike,Legendary,Controller,Splash Split Projectile,Long,4,2,2,2,4,4,4,3,2,4,5,3,5,4,4,3,2,4,2,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,AreaControl,Positive scaling from area denial and super placement,0
+Crow,Legendary,Assassin Controller,Poison Dagger,Long,4,4,3,5,4,5,5,4,3,5,3,3,3,4,3,3,2,5,2,0,1,0,None,0,1,1,0,0,0,0,1,0,0,0,1,1,Damage,Positive scaling through chip pressure and anti-heal/teamfight timing,0
+Leon,Legendary,Assassin,Burst Projectile,Normal,3,4,5,4,3,4,4,3,2,4,5,3,2,3,4,2,3,3,5,0,0,1,Self,0,1,1,0,0,0,1,0,0,0,0,1,1,Invisibility,Positive but counterplay-dependent; invis timing matters,0
+Sandy,Legendary,Support Controller,Wide Piercing Projectile,Normal,3,3,3,3,2,5,5,3,2,5,3,3,5,4,5,5,4,3,3,0,0,1,Ally/Area,1,1,0,0,0,0,1,1,1,0,0,1,1,Control,Strong team-scaling from sandstorm control and utility,0
+Surge,Legendary,Damage Assassin,Stage Scaling Projectile,Normal,3,4,4,3,3,5,5,4,3,5,5,4,3,3,5,2,3,3,4,0,1,0,None,1,1,1,0,0,1,0,1,1,0,1,1,1,Mobility,Positive scaling from upgrade management and matchup timing,0
+Amber,Legendary,Controller Damage,Continuous Flame,Long,4,2,2,2,2,4,4,3,2,4,4,5,5,4,4,3,3,4,2,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,AreaControl,Moderate-positive scaling through lane control and fuel discipline,0
+Meg,Legendary,Hybrid Tank,Mech Transform,Long,4,2,3,2,3,4,5,3,2,4,4,4,3,4,5,3,5,4,3,0,0,0,None,0,1,1,0,0,0,0,0,1,0,0,1,1,Damage,Positive scaling from form management and survivability optimization,0
+Chester,Legendary,Damage Dealer,Randomized Utility,Normal,3,2,3,2,3,4,5,4,3,5,5,3,3,3,4,3,3,3,4,0,0,1,Self,1,1,1,0,0,0,0,0,1,1,1,1,1,Utility,Positive/high variance; random super decision-making rewards skill,0
+Cordelius,Legendary,Assassin Controller,Shadow Realm,Normal,3,5,5,5,3,5,5,5,4,5,5,3,3,3,4,2,3,3,5,1,0,1,Self,0,1,1,0,1,0,0,0,0,0,0,1,1,Control,Strong positive scaling from isolation timing and matchup knowledge,0
+Kit,Legendary,Support Assassin,Attach/Jump,Short,1,5,5,4,2,5,5,4,3,5,5,3,2,2,4,5,3,1,5,0,1,1,Ally/Self,1,1,1,0,0,0,1,0,1,0,0,1,1,Healing,Very team/matchup dependent; high scaling with coordination,0
+Draco,Legendary,Tank Damage,Melee/Dragon Form,Short,2,3,4,3,2,4,5,3,2,4,5,4,3,2,4,3,5,2,5,0,0,1,Self,0,1,1,0,0,1,0,0,1,0,0,1,1,Damage,Moderate-positive scaling from form timing and aggression control,0
+Kenji,Legendary,Assassin,Dash/Slice,Short,1,5,5,5,3,5,5,5,4,5,5,4,2,2,4,2,4,1,5,1,0,1,Self,0,1,1,0,0,0,0,0,1,0,0,1,1,Mobility,High positive scaling from combo sequencing and dash control,0
+Pierce,Legendary,Damage Dealer,Piercing Projectile,Long,4,3,3,3,4,4,4,4,3,5,5,4,3,4,4,2,3,4,3,0,0,0,None,0,1,1,0,0,0,0,1,1,0,0,1,1,Damage,Likely positive scaling from piercing angles; review exact kit,1
+Nori,Legendary,Controller,Utility Control,Normal,3,3,3,3,3,5,5,4,3,5,4,3,4,4,4,4,3,3,3,0,0,0,None,1,1,1,0,0,0,0,0,1,0,0,1,1,Control,Likely positive scaling from control utility; review exact kit,1
+Kaze,Ultra Legendary,Assassin,High Mobility Burst,Short,1,5,5,5,4,5,5,5,4,5,5,4,2,2,4,2,3,1,5,1,1,0,None,0,1,1,0,0,0,1,0,1,0,0,1,1,Mobility,Likely very high scaling from elite mobility; review exact kit,1
+Sirius,Ultra Legendary,Controller Damage,Advanced Utility Projectile,Long,4,4,3,4,4,5,5,5,4,5,5,4,4,4,5,4,3,4,3,0,0,0,None,1,1,1,0,0,0,0,1,1,1,1,1,1,Utility,Likely high scaling due to advanced utility; review exact kit,1
