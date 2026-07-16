@@ -1,237 +1,519 @@
 # Brawl Stars Balance Analyzer
 
-An end-to-end machine learning project exploring what makes a Brawl Stars brawler strong.
+An end-to-end machine learning project analyzing which gameplay characteristics contribute most to a Brawl Stars brawler’s competitive performance.
 
-The goal of this project is to investigate which gameplay characteristics contribute most to a brawler's success, engineer meaningful features from game mechanics, and build machine learning models capable of predicting overall competitive strength.
+The project combines gameplay attributes, engineered mechanics, and rank-based performance data into a reusable machine learning pipeline. Its broader goal is to evaluate whether a brawler’s competitive strength can be estimated from design characteristics alone.
 
 ---
 
-## Project Goals
+## Project Overview
 
-This project follows a complete data science workflow:
+The project follows a complete applied data science workflow:
 
-- Collect gameplay and performance data
-- Clean and validate datasets
-- Engineer meaningful gameplay features
-- Perform exploratory data analysis
-- Visualize trends and relationships
-- Train and evaluate machine learning models
-- Improve the dataset through iterative feature engineering
+* Collect and clean gameplay and performance data
+* Validate and merge multiple datasets
+* Engineer gameplay, combat, and mechanical features
+* Perform exploratory data analysis
+* Compare feature groups
+* Train and tune regression models
+* Evaluate models with cross-validation
+* Perform systematic feature selection
+* Visualize model performance and results
 
-Ultimately, the long-term goal is to predict the expected strength of an entirely new brawler before release using only its design characteristics.
+The long-term objective is to build a **New Brawler Predictor** capable of estimating the expected competitive strength of an unreleased brawler using only its design characteristics.
 
 ---
 
 ## Current Results
 
-- Built a merged dataset containing gameplay, attribute, and performance data for over 100 brawlers.
-- Engineered 15+ gameplay mechanic features.
-- Created multiple exploratory visualizations including class analysis, health analysis, and a correlation heatmap.
-- Trained an initial Random Forest regression model to predict Meta Score.
-- Identified feature engineering as the primary limitation to predictive performance, and made a plan to enrich the dataset.
+The project currently includes:
+
+* A master dataset containing **103 brawlers and 107 columns**
+* Rank-based performance data across Silver, Gold, Diamond, Mythic, Legendary, and Masters
+* More than **70 engineered gameplay attributes**
+* Reusable feature groups for core stats, combat, gameplay, mechanics, and categorical features
+* Linear Regression and Random Forest baselines
+* Random Forest hyperparameter tuning
+* Five-fold cross-validation
+* Feature-group ablation
+* Leave-one-feature-out analysis
+* Recursive feature elimination with cross-validation
+
+The strongest current model uses a tuned Random Forest with six selected gameplay features.
+
+### Best Selected Features
+
+* Mobility Score
+* Escape Score
+* Positioning Importance
+* Decision Complexity
+* Skill Ceiling
+* Survivability Score
+
+RFECV reduced the gameplay feature set from 16 features to 6 while slightly improving cross-validated MAE.
 
 ---
 
-## Data Sources
+## Model Performance
 
-The project combines multiple datasets into one machine learning dataset.
+![Model performance comparison](charts/model_comparison.png)
+
+Tree-based models substantially outperformed the Linear Regression baseline.
+
+Current results include:
+
+| Model                 |   MAE |
+| --------------------- | ----: |
+| Linear Regression     | 3.878 |
+| Initial Random Forest | 1.618 |
+| Tuned Random Forest   | 1.507 |
+| RFECV Random Forest   | 1.498 |
+
+The largest improvement came from replacing the linear model with a nonlinear tree-based model. Hyperparameter tuning and recursive feature elimination produced smaller but measurable improvements while reducing model complexity.
+
+---
+
+## Dataset
+
+The final master dataset is located at:
+
+```text
+data/master_dataset.csv
+```
+
+Current dimensions:
+
+```text
+103 brawlers
+107 columns
+```
+
+The dataset combines three main categories of information.
 
 ### Performance Data
 
-- Win Rate
-- Use Rate
-- Meta Score
-- Overall Rank
+For each rank:
 
-### Gameplay Attributes
+* Win Rate
+* Use Rate
+* Meta Score
 
-- Class
-- Health
-- Damage
-- Projectile Count
-- Damage per Projectile
-- Total Damage
-- Movement Speed
-- Range Category
-- Rarity
+Ranks included:
+
+* Silver
+* Gold
+* Diamond
+* Mythic
+* Legendary
+* Masters
+
+Derived performance metrics include:
+
+* Average Meta Score
+* Average Win Rate
+* Average Use Rate
+* Meta Score Standard Deviation
+* Win Rate Standard Deviation
+* Use Rate Standard Deviation
+* Meta Score Range
+* Win Rate Range
+* Use Rate Range
+* Meta Score Scaling
+* Win Rate Scaling
+* Use Rate Scaling
+
+### Core Character Statistics
+
+Examples include:
+
+* Health
+* Total Damage
+* Effective Range
+* Range Score
+* Ammo Count
+* Movement Speed
+* Class
+* Rarity
 
 ### Engineered Gameplay Features
 
-Binary gameplay mechanics including:
+Examples include:
 
-- Dash
-- Healing
-- Stun
-- Slow
-- Shield
-- Wall Break
-- Splash Damage
-- Piercing
-- Knockback
-- Area Control
-- Pets
-- Invisibility
+* Mobility Score
+* Engage Score
+* Escape Score
+* Aim Precision
+* Positioning Importance
+* Decision Complexity
+* Mechanical Difficulty
+* Skill Floor
+* Skill Ceiling
+* Area Control Score
+* Lane Control Score
+* Objective Pressure Score
+* Team Utility Score
+* Survivability Score
+* Poke Pressure Score
+* Close Range Threat Score
 
-Additional engineered features include:
+### Combat Features
 
-- Attack Style
-- Super Type
-- Skill Ceiling
+Examples include:
 
----
+* Reload Speed Score
+* Attack Cooldown Score
+* Projectile Speed Score
+* Projectile Width Score
+* Burst Damage Score
+* Sustained DPS Score
+* Super Charge Rate Score
 
-## Project Workflow
+### Binary Mechanics
 
-```
-Collect Data
-      ↓
-Clean Data
-      ↓
-Feature Engineering
-      ↓
-Dataset Validation
-      ↓
-Exploratory Data Analysis
-      ↓
-Visualization
-      ↓
-Machine Learning
-      ↓
-Model Evaluation
-      ↓
-Feature Engineering Improvements
-```
+Examples include:
 
----
-
-## Current Project Structure
-
-```
-brawl-stars-balance-analyzer/
-
-├── data/
-│   ├── raw datasets
-│   ├── cleaned datasets
-│   └── brawler_final_dataset.csv
-│
-├── src/
-│   ├── data collection
-│   ├── data cleaning
-│   ├── feature engineering
-│   ├── exploratory analysis
-│   ├── visualization
-│   └── machine learning
-│
-├── charts/
-│   ├── correlation heatmap
-│   ├── class analysis
-│   ├── mechanic analysis
-│   ├── health relationships
-│   └── additional visualizations
-│
-├── reports/
-│   ├── EDA_Report.md
-│   ├── Machine_Learning_Report.md
-│   └── Feature_Engineering_Notes.md
-│
-└── README.md
-```
-
----
-
-## Exploratory Data Analysis
-
-Current analyses include:
-
-- Correlation heatmap
-- Class performance analysis
-- Range analysis
-- Gameplay mechanic analysis
-- Health vs. Win Rate
-- Health vs. Meta Score
-- Feature correlation analysis
-
-These analyses helped identify relationships between gameplay characteristics and competitive performance while also revealing limitations within the dataset.
+* Dash
+* Jump or Teleport
+* Healing
+* Stun
+* Slow
+* Knockback
+* Pull
+* Silence
+* Shield
+* Invisibility
+* Pets or Summons
+* Piercing
+* Splash Damage
+* Wall Break
+* Area Control
+* Bush Scouting
 
 ---
 
 ## Machine Learning
 
-Current target:
+The primary prediction target is:
 
-**Meta Score**
+```text
+MetaScoreScaling
+```
 
-Current model:
+This target measures how strongly a brawler’s competitive Meta Score changes across ranks.
 
-- Random Forest Regressor
+### Linear Regression
 
-Evaluation metrics:
+The Linear Regression baseline performed poorly:
 
-- Mean Absolute Error (MAE)
-- R² Score
+```text
+MAE: 3.878
+R²: approximately -2.08
+```
 
-Initial results demonstrated that the current feature set is insufficient for accurate prediction. Rather than indicating a poor algorithm choice, this finding highlights the importance of richer feature engineering and higher-quality input data.
+This suggested that the relationship between gameplay characteristics and competitive performance is not adequately represented by a simple linear model.
 
-This insight guides the next phase of the project.
+### Random Forest
+
+The initial Random Forest showed meaningful improvement:
+
+```text
+Single-split MAE: approximately 1.95
+Single-split R²: approximately 0.09
+```
+
+Cross-validation later showed that the original single train-test split was optimistic.
+
+### Tuned Random Forest
+
+Randomized hyperparameter search identified the following model configuration:
+
+```python
+RandomForestRegressor(
+    n_estimators=500,
+    max_depth=2,
+    min_samples_split=10,
+    min_samples_leaf=1,
+    max_features="log2",
+    random_state=42,
+)
+```
+
+The tuned gameplay-only model achieved:
+
+```text
+Cross-validated MAE: 1.5072
+Cross-validated R²: 0.0881
+```
+
+### Recursive Feature Elimination
+
+Recursive feature elimination with cross-validation selected six gameplay features:
+
+```text
+MobilityScore
+EscapeScore
+PositioningImportance
+DecisionComplexity
+SkillCeiling
+SurvivabilityScore
+```
+
+The selected model achieved:
+
+```text
+Cross-validated MAE: 1.4975
+```
+
+This reduced the number of gameplay features by 62.5% while slightly improving predictive performance.
+
+---
+
+## Feature Analysis
+
+### Feature-Group Ablation
+
+Multiple feature groups were compared:
+
+* Core Stats
+* Combat
+* Gameplay
+* Mechanics
+* Categories
+* Combined feature sets
+* All Features
+
+The gameplay feature group consistently performed best.
+
+The full feature set performed worse than the gameplay-only set, suggesting that additional variables introduced redundancy and noise.
+
+### Leave-One-Feature-Out Analysis
+
+Each gameplay feature was removed individually and the model was retrained.
+
+The strongest negative impact occurred when removing:
+
+```text
+SurvivabilityScore
+```
+
+Removing Survivability Score increased MAE by approximately:
+
+```text
+0.0405
+```
+
+Other useful features included:
+
+* Decision Complexity
+* Objective Pressure Score
+* Positioning Importance
+* Mobility Score
+* Team Utility Score
+
+These experiments showed that some engineered gameplay scores contain meaningful predictive signal, while others appear redundant when used together.
+
+---
+
+## Exploratory Data Analysis
+
+Completed analyses include:
+
+* Correlation heatmap
+* Class performance comparison
+* Range-category analysis
+* Health versus Win Rate
+* Health versus Meta Score
+* Gameplay mechanic comparisons
+* Rank-based performance analysis
+* Feature importance analysis
+* Feature-group ablation
+* Leave-one-feature-out analysis
+
+These analyses helped identify relationships between gameplay mechanics and competitive performance while also highlighting the limitations of static character attributes.
+
+---
+
+## Project Workflow
+
+```text
+Collect Data
+      ↓
+Clean and Validate Data
+      ↓
+Engineer Gameplay Features
+      ↓
+Build Master Dataset
+      ↓
+Exploratory Data Analysis
+      ↓
+Baseline Modeling
+      ↓
+Cross-Validation
+      ↓
+Hyperparameter Tuning
+      ↓
+Feature-Group Ablation
+      ↓
+Leave-One-Feature-Out Analysis
+      ↓
+Recursive Feature Elimination
+      ↓
+Model Comparison
+      ↓
+Final Evaluation
+```
+
+---
+
+## Project Structure
+
+```text
+brawl-stars-balance-analyzer/
+
+├── charts/
+│   ├── model_comparison.png
+│   ├── correlation heatmap
+│   ├── class analysis
+│   ├── mechanic analysis
+│   └── gameplay relationships
+│
+├── data/
+│   ├── raw datasets
+│   ├── cleaned datasets
+│   ├── brawler_features_v3_ml_ready.csv
+│   ├── performance_by_rank.csv
+│   └── master_dataset.csv
+│
+├── results/
+│   ├── leave_one_feature_out.csv
+│   ├── rfecv_feature_rankings.csv
+│   └── rfecv_performance_curve.csv
+│
+├── reports/
+│   ├── EDA_Report.md
+│   ├── Machine_Learning_Report.md
+│   └── Dataset_v2_Plan.md
+│
+├── src/
+│   ├── data_collection/
+│   ├── data_processing/
+│   ├── exploratory_analysis/
+│   ├── feature_engineering/
+│   ├── machine_learning/
+│   │   ├── baseline_linear_regression.py
+│   │   ├── random_forest_regression.py
+│   │   ├── tune_random_forest.py
+│   │   ├── feature_ablation.py
+│   │   ├── leave_one_feature_out.py
+│   │   ├── rfecv_feature_selection.py
+│   │   └── feature_groups.py
+│   │
+│   └── visualization/
+│       ├── model_comparison.py
+│       └── __init__.py
+│
+├── .gitignore
+└── README.md
+```
 
 ---
 
 ## Technologies
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Git
-- GitHub
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* BeautifulSoup
+* Git
+* GitHub
 
 ---
 
-## Future Work
+## Key Findings
 
-### Short Term
+### Gameplay features contain the strongest signal
 
-- Compare multiple machine learning models
-- Evaluate different feature sets
-- Analyze feature importance
-- Improve project documentation
+Manually engineered gameplay scores consistently outperformed core statistics, combat features, mechanics, and categorical variables.
 
-### Long Term
+### More features do not always improve performance
 
-Build Version 2 of the dataset with richer gameplay features including:
+The full feature set underperformed the gameplay-only feature set, suggesting that additional variables introduced redundancy and noise.
 
-- Reload Speed
-- Attack Cooldown
-- DPS
-- Projectile Speed
-- Healing Amount
-- Shield Strength
-- Stun Duration
-- Mobility metrics
-- Utility metrics
+### Static characteristics explain only part of competitive performance
 
-The final objective is to develop a **New Brawler Predictor** capable of estimating a brawler's expected competitive strength before release based solely on its design characteristics.
+The models identified some predictive relationships, but overall performance remains limited.
+
+Competitive strength likely also depends on factors such as:
+
+* Map rotation
+* Game mode
+* Team composition
+* Player behavior
+* Balance updates
+* Pick rate
+* Counter relationships
+* Meta changes over time
+
+### Simpler models can generalize better
+
+RFECV reduced the gameplay feature set from 16 features to 6 while slightly improving cross-validated MAE.
+
+### Better data may matter more than model complexity
+
+The primary limitation is not necessarily the choice of algorithm. Static character attributes alone may not contain enough information to accurately predict a constantly changing competitive meta.
 
 ---
 
-## Key Takeaways
+## Remaining Work
 
-This project has evolved from a simple exploratory data analysis into a complete machine learning pipeline emphasizing:
+### Model Comparison
 
-- Data collection
-- Feature engineering
-- Statistical analysis
-- Visualization
-- Predictive modeling
-- Iterative model improvement
+Compare the current Random Forest against:
 
-One of the most important findings so far is that **better data is often more valuable than a more complex algorithm**, reinforcing the central role of feature engineering in successful machine learning projects.
+* Gradient Boosting Regressor
+* HistGradientBoostingRegressor
+* XGBoost
+
+### Final Visualizations
+
+Create:
+
+* RFECV performance curve
+* Final feature importance chart
+* Final model comparison chart
+
+### Documentation
+
+* Update the machine learning report
+* Add final conclusions
+* Document model limitations
+* Finalize resume and portfolio descriptions
+
+---
+
+## Long-Term Direction
+
+A future version of the project could incorporate dynamic competitive data such as:
+
+* Map-specific performance
+* Game-mode-specific performance
+* Team composition
+* Matchup and counter data
+* Balance-change history
+* Time-series Meta Score
+* Pick and ban rates
+* Player skill distributions
+
+These additions could support a more advanced system capable of predicting how a new or rebalanced brawler might perform within a specific competitive environment.
+
+---
 
 ## Additional Documentation
 
 For more detailed analyses, see:
 
-- [Exploratory Data Analysis Report](reports/EDA_Report.md)
-- [Machine Learning Report](reports/Machine_Learning_Report.md)
-- [Dataset Version 2 Plan](reports/Dataset_v2_Plan.md)
+* [Exploratory Data Analysis Report](reports/EDA_Report.md)
+* [Machine Learning Report](reports/Machine_Learning_Report.md)
+* [Dataset Version 2 Plan](reports/Dataset_v2_Plan.md)
