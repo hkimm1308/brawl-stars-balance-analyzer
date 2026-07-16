@@ -1,0 +1,17 @@
+Feature,Selected,Ranking
+MobilityScore,True,1
+EscapeScore,True,1
+PositioningImportance,True,1
+DecisionComplexity,True,1
+SkillCeiling,True,1
+SurvivabilityScore,True,1
+ObjectivePressureScore,False,2
+AreaControlScore,False,3
+AimPrecision,False,4
+TeamUtilityScore,False,5
+MechanicalDifficulty,False,6
+EngageScore,False,7
+LaneControlScore,False,8
+CloseRangeThreatScore,False,9
+SkillFloor,False,10
+PokePressureScore,False,11
