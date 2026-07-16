@@ -2,6 +2,8 @@
 
 An end-to-end machine learning project investigating which gameplay characteristics drive competitive performance in **Brawl Stars**.
 
+Brawl Stars provides an interesting machine learning case study because competitive strength emerges from the interaction of dozens of gameplay mechanics, making it a natural testbed for feature engineering and predictive modeling.
+
 The project combines gameplay attributes, engineered mechanics, and ranked competitive data into a reusable machine learning pipeline capable of predicting a brawler's overall competitive strength. It demonstrates a complete applied machine learning workflow—from raw data processing and feature engineering to model optimization, feature selection, benchmarking, and visualization.
 
 ---
