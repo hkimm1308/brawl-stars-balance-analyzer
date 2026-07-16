@@ -73,6 +73,14 @@ The largest improvement came from replacing the linear model with a nonlinear tr
 
 ---
 
+### Model Benchmark
+
+![Model benchmark](charts/model_benchmark.png)
+
+Using the same six selected features and identical five-fold cross-validation, the tuned Random Forest achieved the lowest MAE among the tested ensemble models.
+
+---
+
 ## Dataset
 
 The final master dataset is located at:
@@ -273,6 +281,14 @@ This reduced the number of gameplay features by 62.5% while slightly improving p
 ![RFECV performance curve](charts/rfecv_performance_curve.png)
 
 Cross-validation identified six gameplay features as the best-performing subset. This reduced the feature count by 62.5% while slightly improving mean absolute error compared with the full 16-feature gameplay model.
+
+---
+
+### Final Feature Importance
+
+![Final feature importance](charts/final_feature_importance.png)
+
+Among the six RFECV-selected gameplay features, Survivability Score contributed the most to the final Random Forest model, followed by Decision Complexity and Skill Ceiling. These values represent model-based feature importance rather than causal effects.
 
 ---
 
