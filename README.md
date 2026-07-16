@@ -8,11 +8,19 @@ The project combines gameplay attributes, engineered mechanics, and ranked compe
 
 ---
 
-## 📄 Technical Report
-
-For a detailed walkthrough of the project (including dataset construction, feature engineering, exploratory data analysis, machine learning experiments, feature selection, model benchmarking, and final conclusions), see the full technical report.
-
-**➡️ [Brawl Stars Balance Analyzer Technical Report](Brawl_Stars_Balance_Analyzer_Technical_Report.pdf)**
+> ## 📄 Technical Report
+>
+> Interested in the full engineering process?
+>
+> Read the **[Brawl Stars Balance Analyzer Technical Report](Brawl_Stars_Balance_Analyzer_Technical_Report.pdf)** for a detailed discussion of:
+> - Problem formulation
+> - Dataset construction
+> - Feature engineering
+> - Exploratory data analysis
+> - Machine learning experiments
+> - Feature selection
+> - Model benchmarking
+> - Key findings and future work
 
 ---
 
