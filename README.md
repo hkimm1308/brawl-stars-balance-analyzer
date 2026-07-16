@@ -268,6 +268,14 @@ This reduced the number of gameplay features by 62.5% while slightly improving p
 
 ---
 
+### RFECV Performance Curve
+
+![RFECV performance curve](charts/rfecv_performance_curve.png)
+
+Cross-validation identified six gameplay features as the best-performing subset. This reduced the feature count by 62.5% while slightly improving mean absolute error compared with the full 16-feature gameplay model.
+
+---
+
 ## Feature Analysis
 
 ### Feature-Group Ablation
